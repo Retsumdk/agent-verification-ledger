@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import type { LedgerEntry } from './types';
+import type { LedgerEntry } from './types.js';
 
 export function calculateHash(entry: Omit<LedgerEntry, 'hash'>): string {
   const data = JSON.stringify({

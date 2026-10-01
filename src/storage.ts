@@ -1,7 +1,7 @@
 import { appendFileSync, readFileSync, existsSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { mkdirSync } from 'node:fs';
-import type { LedgerEntry } from './types';
+import type { LedgerEntry } from './types.js';
 
 export class StorageProvider {
   private readonly path: string;

@@ -14,8 +14,10 @@ Immutable ledger for tracking agent actions, decisions, and provenance for audit
 ## Installation
 
 ```bash
-bun add agent-verification-ledger
+npm install github:Retsumdk/agent-verification-ledger
 ```
+
+> **Using Bun?** Bun blocks a git dependency's lifecycle scripts by default. After installing, run `bun pm trust agent-verification-ledger` so the `prepare` build step runs.
 
 ## Usage
 

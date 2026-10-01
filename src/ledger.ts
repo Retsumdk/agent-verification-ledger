@@ -1,13 +1,13 @@
 import { randomUUID } from 'node:crypto';
-import { calculateHash, verifyHash } from './crypto';
-import { StorageProvider } from './storage';
+import { calculateHash, verifyHash } from './crypto.js';
+import { StorageProvider } from './storage.js';
 import type { 
   LedgerEntry, 
   EntryType, 
   AuditResult, 
   ProvenanceChain, 
   LedgerOptions 
-} from './types';
+} from './types.js';
 
 export class VerificationLedger {
   private entries: LedgerEntry[] = [];

@@ -1,10 +1,10 @@
-export * from './types';
-export { VerificationLedger } from './ledger';
-export { StorageProvider } from './storage';
-export { calculateHash, verifyHash } from './crypto';
+export * from './types.js';
+export { VerificationLedger } from './ledger.js';
+export { StorageProvider } from './storage.js';
+export { calculateHash, verifyHash } from './crypto.js';
 
-import { VerificationLedger } from './ledger';
-import type { LedgerOptions } from './types';
+import { VerificationLedger } from './ledger.js';
+import type { LedgerOptions } from './types.js';
 
 /**
  * Creates a new VerificationLedger instance with standard options.
